@@ -36,11 +36,11 @@ const App = () => {
 
   return (
     <div className="app-container">
-      <h1 style={{display:"flex",alignItems:"center",justifyContent:"center",color:"red"}}>Profile Manager</h1>
+      <h1 style={{display:"flex",alignItems:"center",justifyContent:"center",color:"red",fontFamily:"revert-layer",fontWeight:"2rpm"}}>Profile Manager</h1>
       <AddUserForm/>
-      <div className="search-filter">
-        <label htmlFor="">Find The User</label>
-        <input style={{borderRadius:"10px"}}
+      <div className="search-filter" style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
+        <label style={{fontWeight:"2rpm"}} htmlFor="">Find The User</label>
+        <input style={{borderRadius:"5px",width:"300px",height:"23px"}}
           type="text"
           placeholder="Search by name, email, description, specialization"
           value={query}
